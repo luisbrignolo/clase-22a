@@ -1,0 +1,326 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color: #2e64a1;
+    padding: 1em 0;
+}
+
+header h1{
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+
+}
+
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 2em;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li{
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* footer p{
+    text-align: center;
+} podría ser así*/
+
+.holder{
+    width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* inicio home */
+.homeimg{
+    margin-top: 1.5em;
+    /* clear: both; podría ser */
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 1em;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
+/* fin del home */
+
+/* Inicio Nosotros */
+
+.historia p{
+    font-size: 0.8em;
+}
+
+.personas{
+    overflow: hidden;
+}
+
+.persona{
+    width: 18%;
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+}
+
+.persona figure{
+    margin: 0.8em 0 1em;
+    text-align: center;
+}
+.persona figure img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.persona h5, .persona h6{
+    text-align: center;
+    font-weight: normal;
+    color: #2e64a1;
+    margin: 0;
+}
+
+.persona h5{
+    font-size: 0.9em;
+}
+
+.persona h6{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.persona p{
+    font-size: 0.7em;
+    color: #444;
+    margin: 0 1em 1em;
+}
+
+.persona:first-child{
+    margin-left: 0;
+}
+/* Fin de Nosotros */
+
+/* Inicio de Servicios */
+
+.servicio{
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.servicio .info{
+    width: 75%;
+}
+
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.servicio figure img{
+    border-radius: 0.8em;
+}
+
+
+.servicio:nth-child(even) figure{/*Par*/
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.servicio:nth-child(even) .info{
+    float: left;
+}
+
+.servicio:nth-child(odd) figure{ /*impar*/
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.servicio:nth-child(odd) .info{
+    float: right;
+}
+
+/* Fin de servicios */
+
+/* Inicio Galeria */
+
+.galeria .foto{
+    /* display: inline-block; */
+    float: left;
+    width: 18%;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+}
+
+.galeria .foto img{
+    width: 100%;
+    display: block;
+}
+
+.foto:nth-child(5n+1){
+    /* border-color: red; */
+    margin-left: 0;
+
+}
+
+/* Fin Galeria */
+
+/*Inicio contacto*/
+
+.columna{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+.columna.left{
+    border-right: 2px solid gray;
+}
+
+.columna.right p{
+    font-size: 0.9em;
+}
+
+.columna.right ul li{
+    font-size: 0.8em;
+}
+
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
+.formulario input,
+.formulario textarea{
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%; /*probar porcentajes */
+}
+
+.formulario textarea{
+    height: 10em;
+    resize: none; /*paque que no se modifique la cajita de comentario*/
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    color: white;
+    font-size: 1em;
+    width: auto;
+    float: right;
+    margin-right: 1.5em;
+
+}
+
+/* .formulario .acciones{
+    text-align: center;
+}  "esto para poner el boton enviar al medio" */
+
+
+
+
+/* Fin contacto */
